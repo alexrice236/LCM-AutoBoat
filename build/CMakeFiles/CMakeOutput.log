@@ -1,0 +1,757 @@
+The system is: Linux - 4.19.0-13-686 - i686
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/pi/boat/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/pi/boat/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2c9fc/fast && /usr/bin/make -f CMakeFiles/cmTC_2c9fc.dir/build.make CMakeFiles/cmTC_2c9fc.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c9fc.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2c9fc.dir/testCCompiler.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_2c9fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c9fc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2c9fc.dir/testCCompiler.c.o  -o cmTC_2c9fc 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_61f4e/fast && /usr/bin/make -f CMakeFiles/cmTC_61f4e.dir/build.make CMakeFiles/cmTC_61f4e.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Debian 8.3.0-6) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/8/cc1 -quiet -v -imultiarch i386-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccWmvzRm.s
+GNU C17 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/i386-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/i686-linux-gnu/8/../../../../i686-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/i686-linux-gnu/8/include
+ /usr/local/include
+ /usr/lib/gcc/i686-linux-gnu/8/include-fixed
+ /usr/include/i386-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c52019c44a1e362eeb6021f108314d7e
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=i686'
+ as -v --32 -o CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o /tmp/ccWmvzRm.s
+GNU assembler version 2.31.1 (i686-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=i686'
+Linking C executable cmTC_61f4e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61f4e.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o  -o cmTC_61f4e 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Debian 8.3.0-6) 
+COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_61f4e' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/8/collect2 -plugin /usr/lib/gcc/i686-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cccgTgVo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -pie -o cmTC_61f4e /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/Scrt1.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/i686-linux-gnu/8 -L/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/8/../../.. CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/i686-linux-gnu/8/crtendS.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_61f4e' '-mtune=generic' '-march=i686'
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/i686-linux-gnu/8/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/i686-linux-gnu/8/include-fixed]
+    add: [/usr/include/i386-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/i686-linux-gnu/8/include] ==> [/usr/lib/gcc/i686-linux-gnu/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib/gcc/i686-linux-gnu/8/include-fixed] ==> [/usr/lib/gcc/i686-linux-gnu/8/include-fixed]
+  collapse include dir [/usr/include/i386-linux-gnu] ==> [/usr/include/i386-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/i686-linux-gnu/8/include;/usr/local/include;/usr/lib/gcc/i686-linux-gnu/8/include-fixed;/usr/include/i386-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_61f4e/fast && /usr/bin/make -f CMakeFiles/cmTC_61f4e.dir/build.make CMakeFiles/cmTC_61f4e.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: i686-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=i686']
+  ignore line: [ /usr/lib/gcc/i686-linux-gnu/8/cc1 -quiet -v -imultiarch i386-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccWmvzRm.s]
+  ignore line: [GNU C17 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/i386-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/i686-linux-gnu/8/../../../../i686-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/i686-linux-gnu/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/i686-linux-gnu/8/include-fixed]
+  ignore line: [ /usr/include/i386-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c52019c44a1e362eeb6021f108314d7e]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=i686']
+  ignore line: [ as -v --32 -o CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o /tmp/ccWmvzRm.s]
+  ignore line: [GNU assembler version 2.31.1 (i686-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=i686']
+  ignore line: [Linking C executable cmTC_61f4e]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61f4e.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o  -o cmTC_61f4e ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper]
+  ignore line: [Target: i686-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_61f4e' '-mtune=generic' '-march=i686']
+  link line: [ /usr/lib/gcc/i686-linux-gnu/8/collect2 -plugin /usr/lib/gcc/i686-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cccgTgVo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -pie -o cmTC_61f4e /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/Scrt1.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/i686-linux-gnu/8 -L/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/8/../../.. CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/i686-linux-gnu/8/crtendS.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/i686-linux-gnu/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cccgTgVo.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_61f4e] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8] ==> dir [/usr/lib/gcc/i686-linux-gnu/8]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu] ==> dir [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8/../../../../lib] ==> dir [/usr/lib/gcc/i686-linux-gnu/8/../../../../lib]
+    arg [-L/lib/i386-linux-gnu] ==> dir [/lib/i386-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/i386-linux-gnu] ==> dir [/usr/lib/i386-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/i686-linux-gnu/8/../../..]
+    arg [CMakeFiles/cmTC_61f4e.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8] ==> [/usr/lib/gcc/i686-linux-gnu/8]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/i386-linux-gnu] ==> [/lib/i386-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/i686-linux-gnu/8;/usr/lib/i386-linux-gnu;/usr/lib;/lib/i386-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_02a4b/fast && /usr/bin/make -f CMakeFiles/cmTC_02a4b.dir/build.make CMakeFiles/cmTC_02a4b.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_02a4b.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_02a4b.dir/testCXXCompiler.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_02a4b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02a4b.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_02a4b.dir/testCXXCompiler.cxx.o  -o cmTC_02a4b 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ba6d7/fast && /usr/bin/make -f CMakeFiles/cmTC_ba6d7.dir/build.make CMakeFiles/cmTC_ba6d7.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Debian 8.3.0-6) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/8/cc1plus -quiet -v -imultiarch i386-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccpk9hUF.s
+GNU C++14 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/i386-linux-gnu/c++/8"
+ignoring nonexistent directory "/usr/local/include/i386-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/i686-linux-gnu/8/../../../../i686-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/8
+ /usr/include/i386-linux-gnu/c++/8
+ /usr/include/c++/8/backward
+ /usr/lib/gcc/i686-linux-gnu/8/include
+ /usr/local/include
+ /usr/lib/gcc/i686-linux-gnu/8/include-fixed
+ /usr/include/i386-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 613048e5213e45a6620a76928acfc255
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ as -v --32 -o CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpk9hUF.s
+GNU assembler version 2.31.1 (i686-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+Linking CXX executable cmTC_ba6d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba6d7.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ba6d7 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Debian 8.3.0-6) 
+COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ba6d7' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/8/collect2 -plugin /usr/lib/gcc/i686-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAHV0UL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -pie -o cmTC_ba6d7 /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/Scrt1.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/i686-linux-gnu/8 -L/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/8/../../.. CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-linux-gnu/8/crtendS.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ba6d7' '-shared-libgcc' '-mtune=generic' '-march=i686'
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/8]
+    add: [/usr/include/i386-linux-gnu/c++/8]
+    add: [/usr/include/c++/8/backward]
+    add: [/usr/lib/gcc/i686-linux-gnu/8/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/i686-linux-gnu/8/include-fixed]
+    add: [/usr/include/i386-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/8] ==> [/usr/include/c++/8]
+  collapse include dir [/usr/include/i386-linux-gnu/c++/8] ==> [/usr/include/i386-linux-gnu/c++/8]
+  collapse include dir [/usr/include/c++/8/backward] ==> [/usr/include/c++/8/backward]
+  collapse include dir [/usr/lib/gcc/i686-linux-gnu/8/include] ==> [/usr/lib/gcc/i686-linux-gnu/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib/gcc/i686-linux-gnu/8/include-fixed] ==> [/usr/lib/gcc/i686-linux-gnu/8/include-fixed]
+  collapse include dir [/usr/include/i386-linux-gnu] ==> [/usr/include/i386-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/8;/usr/include/i386-linux-gnu/c++/8;/usr/include/c++/8/backward;/usr/lib/gcc/i686-linux-gnu/8/include;/usr/local/include;/usr/lib/gcc/i686-linux-gnu/8/include-fixed;/usr/include/i386-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_ba6d7/fast && /usr/bin/make -f CMakeFiles/cmTC_ba6d7.dir/build.make CMakeFiles/cmTC_ba6d7.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [Target: i686-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  ignore line: [ /usr/lib/gcc/i686-linux-gnu/8/cc1plus -quiet -v -imultiarch i386-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccpk9hUF.s]
+  ignore line: [GNU C++14 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/i386-linux-gnu/c++/8"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/i386-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/i686-linux-gnu/8/../../../../i686-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/8]
+  ignore line: [ /usr/include/i386-linux-gnu/c++/8]
+  ignore line: [ /usr/include/c++/8/backward]
+  ignore line: [ /usr/lib/gcc/i686-linux-gnu/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/i686-linux-gnu/8/include-fixed]
+  ignore line: [ /usr/include/i386-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Debian 8.3.0-6) version 8.3.0 (i686-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 613048e5213e45a6620a76928acfc255]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  ignore line: [ as -v --32 -o CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpk9hUF.s]
+  ignore line: [GNU assembler version 2.31.1 (i686-linux-gnu) using BFD version (GNU Binutils for Debian) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  ignore line: [Linking CXX executable cmTC_ba6d7]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba6d7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ba6d7 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper]
+  ignore line: [Target: i686-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 8.3.0-6' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=i686-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/8/:/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ba6d7' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ /usr/lib/gcc/i686-linux-gnu/8/collect2 -plugin /usr/lib/gcc/i686-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAHV0UL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -pie -o cmTC_ba6d7 /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/Scrt1.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/i686-linux-gnu/8 -L/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/8/../../.. CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-linux-gnu/8/crtendS.o /usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/i686-linux-gnu/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/i686-linux-gnu/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccAHV0UL.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ba6d7] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8] ==> dir [/usr/lib/gcc/i686-linux-gnu/8]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu] ==> dir [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8/../../../../lib] ==> dir [/usr/lib/gcc/i686-linux-gnu/8/../../../../lib]
+    arg [-L/lib/i386-linux-gnu] ==> dir [/lib/i386-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/i386-linux-gnu] ==> dir [/usr/lib/i386-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/i686-linux-gnu/8/../../..]
+    arg [CMakeFiles/cmTC_ba6d7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/i686-linux-gnu/8/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8] ==> [/usr/lib/gcc/i686-linux-gnu/8]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8/../../../i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/i386-linux-gnu] ==> [/lib/i386-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/i686-linux-gnu/8;/usr/lib/i386-linux-gnu;/usr/lib;/lib/i386-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__std_gnu99 succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4eab7/fast && /usr/bin/make -f CMakeFiles/cmTC_4eab7.dir/build.make CMakeFiles/cmTC_4eab7.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4eab7.dir/src.c.o
+/usr/bin/cc   -DCMAKE_C_COMPILER_SUPPORTS__std_gnu99   -std=gnu99 -o CMakeFiles/cmTC_4eab7.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4eab7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4eab7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_C_COMPILER_SUPPORTS__std_gnu99    -rdynamic CMakeFiles/cmTC_4eab7.dir/src.c.o  -o cmTC_4eab7 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__Wall succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c0011/fast && /usr/bin/make -f CMakeFiles/cmTC_c0011.dir/build.make CMakeFiles/cmTC_c0011.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0011.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wall   -Wall -o CMakeFiles/cmTC_c0011.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c0011
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0011.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wall    -rdynamic CMakeFiles/cmTC_c0011.dir/src.c.o  -o cmTC_c0011 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__Wshadow succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d31f/fast && /usr/bin/make -f CMakeFiles/cmTC_4d31f.dir/build.make CMakeFiles/cmTC_4d31f.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d31f.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wshadow   -Wshadow -o CMakeFiles/cmTC_4d31f.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4d31f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d31f.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wshadow    -rdynamic CMakeFiles/cmTC_4d31f.dir/src.c.o  -o cmTC_4d31f 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__Wuninitialized succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9849e/fast && /usr/bin/make -f CMakeFiles/cmTC_9849e.dir/build.make CMakeFiles/cmTC_9849e.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9849e.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wuninitialized   -Wuninitialized -o CMakeFiles/cmTC_9849e.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9849e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9849e.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wuninitialized    -rdynamic CMakeFiles/cmTC_9849e.dir/src.c.o  -o cmTC_9849e 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__Wunused_variable succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8b4f3/fast && /usr/bin/make -f CMakeFiles/cmTC_8b4f3.dir/build.make CMakeFiles/cmTC_8b4f3.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b4f3.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wunused_variable   -Wunused-variable -o CMakeFiles/cmTC_8b4f3.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8b4f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b4f3.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wunused_variable    -rdynamic CMakeFiles/cmTC_8b4f3.dir/src.c.o  -o cmTC_8b4f3 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__Werror_return_type succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c03ab/fast && /usr/bin/make -f CMakeFiles/cmTC_c03ab.dir/build.make CMakeFiles/cmTC_c03ab.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c03ab.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Werror_return_type   -Werror=return-type -o CMakeFiles/cmTC_c03ab.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c03ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c03ab.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Werror_return_type    -rdynamic CMakeFiles/cmTC_c03ab.dir/src.c.o  -o cmTC_c03ab 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7f690/fast && /usr/bin/make -f CMakeFiles/cmTC_7f690.dir/build.make CMakeFiles/cmTC_7f690.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f690.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter   -Wno-unused-parameter -o CMakeFiles/cmTC_7f690.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7f690
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f690.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wno_unused_parameter    -rdynamic CMakeFiles/cmTC_7f690.dir/src.c.o  -o cmTC_7f690 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e96d7/fast && /usr/bin/make -f CMakeFiles/cmTC_e96d7.dir/build.make CMakeFiles/cmTC_e96d7.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e96d7.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length   -Wno-format-zero-length -o CMakeFiles/cmTC_e96d7.dir/src.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e96d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e96d7.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DCMAKE_C_COMPILER_SUPPORTS__Wno_format_zero_length    -rdynamic CMakeFiles/cmTC_e96d7.dir/src.c.o  -o cmTC_e96d7 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CMAKE_CXX_COMPILER_SUPPORTS__Wall succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_330f5/fast && /usr/bin/make -f CMakeFiles/cmTC_330f5.dir/build.make CMakeFiles/cmTC_330f5.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_330f5.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_CXX_COMPILER_SUPPORTS__Wall   -Wall -o CMakeFiles/cmTC_330f5.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_330f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_330f5.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_CXX_COMPILER_SUPPORTS__Wall    -rdynamic CMakeFiles/cmTC_330f5.dir/src.cxx.o  -o cmTC_330f5 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CMAKE_CXX_COMPILER_SUPPORTS__Wshadow succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_08b6d/fast && /usr/bin/make -f CMakeFiles/cmTC_08b6d.dir/build.make CMakeFiles/cmTC_08b6d.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_08b6d.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_CXX_COMPILER_SUPPORTS__Wshadow   -Wshadow -o CMakeFiles/cmTC_08b6d.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_08b6d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08b6d.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_CXX_COMPILER_SUPPORTS__Wshadow    -rdynamic CMakeFiles/cmTC_08b6d.dir/src.cxx.o  -o cmTC_08b6d 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b5329/fast && /usr/bin/make -f CMakeFiles/cmTC_b5329.dir/build.make CMakeFiles/cmTC_b5329.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b5329.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized   -Wuninitialized -o CMakeFiles/cmTC_b5329.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b5329
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5329.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_CXX_COMPILER_SUPPORTS__Wuninitialized    -rdynamic CMakeFiles/cmTC_b5329.dir/src.cxx.o  -o cmTC_b5329 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_30493/fast && /usr/bin/make -f CMakeFiles/cmTC_30493.dir/build.make CMakeFiles/cmTC_30493.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_30493.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable   -Wunused-variable -o CMakeFiles/cmTC_30493.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_30493
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30493.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_CXX_COMPILER_SUPPORTS__Wunused_variable    -rdynamic CMakeFiles/cmTC_30493.dir/src.cxx.o  -o cmTC_30493 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_17b40/fast && /usr/bin/make -f CMakeFiles/cmTC_17b40.dir/build.make CMakeFiles/cmTC_17b40.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17b40.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type   -Werror=return-type -o CMakeFiles/cmTC_17b40.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_17b40
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17b40.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_CXX_COMPILER_SUPPORTS__Werror_return_type    -rdynamic CMakeFiles/cmTC_17b40.dir/src.cxx.o  -o cmTC_17b40 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0b4d0/fast && /usr/bin/make -f CMakeFiles/cmTC_0b4d0.dir/build.make CMakeFiles/cmTC_0b4d0.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0b4d0.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter   -Wno-unused-parameter -o CMakeFiles/cmTC_0b4d0.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0b4d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b4d0.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_CXX_COMPILER_SUPPORTS__Wno_unused_parameter    -rdynamic CMakeFiles/cmTC_0b4d0.dir/src.cxx.o  -o cmTC_0b4d0 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c49b1/fast && /usr/bin/make -f CMakeFiles/cmTC_c49b1.dir/build.make CMakeFiles/cmTC_c49b1.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c49b1.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length   -Wno-format-zero-length -o CMakeFiles/cmTC_c49b1.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c49b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c49b1.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_CXX_COMPILER_SUPPORTS__Wno_format_zero_length    -rdynamic CMakeFiles/cmTC_c49b1.dir/src.cxx.o  -o cmTC_c49b1 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0ef0f/fast && /usr/bin/make -f CMakeFiles/cmTC_0ef0f.dir/build.make CMakeFiles/cmTC_0ef0f.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ef0f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=gnu99 -Wno-format-zero-length    -o CMakeFiles/cmTC_0ef0f.dir/CheckIncludeFile.c.o   -c /home/pi/boat/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0ef0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ef0f.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wno-format-zero-length     -rdynamic CMakeFiles/cmTC_0ef0f.dir/CheckIncludeFile.c.o  -o cmTC_0ef0f 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dbac9/fast && /usr/bin/make -f CMakeFiles/cmTC_dbac9.dir/build.make CMakeFiles/cmTC_dbac9.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dbac9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=gnu99 -Wno-format-zero-length -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_dbac9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dbac9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbac9.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wno-format-zero-length -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_dbac9.dir/CheckFunctionExists.c.o  -o cmTC_dbac9  -lpthread 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6db17/fast && /usr/bin/make -f CMakeFiles/cmTC_6db17.dir/build.make CMakeFiles/cmTC_6db17.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6db17.dir/src.cxx.o
+/usr/bin/c++    -Wno-format-zero-length -DCOMPILER_HAS_HIDDEN_VISIBILITY -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_6db17.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6db17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6db17.dir/link.txt --verbose=1
+/usr/bin/c++   -Wno-format-zero-length -DCOMPILER_HAS_HIDDEN_VISIBILITY    -rdynamic CMakeFiles/cmTC_6db17.dir/src.cxx.o  -o cmTC_6db17 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c6d22/fast && /usr/bin/make -f CMakeFiles/cmTC_c6d22.dir/build.make CMakeFiles/cmTC_c6d22.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c6d22.dir/src.cxx.o
+/usr/bin/c++    -Wno-format-zero-length -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY -fPIE   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_c6d22.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c6d22
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6d22.dir/link.txt --verbose=1
+/usr/bin/c++   -Wno-format-zero-length -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY    -rdynamic CMakeFiles/cmTC_c6d22.dir/src.cxx.o  -o cmTC_c6d22 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
+Change Dir: /home/pi/boat/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_37233/fast && /usr/bin/make -f CMakeFiles/cmTC_37233.dir/build.make CMakeFiles/cmTC_37233.dir/build
+make[1]: Entering directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37233.dir/src.cxx.o
+/usr/bin/c++    -Wno-format-zero-length -DCOMPILER_HAS_DEPRECATED_ATTR -fPIE   -o CMakeFiles/cmTC_37233.dir/src.cxx.o -c /home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx
+/home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+     int main() { return somefunc();}
+                                  ^
+/home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+ __attribute__((__deprecated__)) int somefunc() { return 0; }
+                                     ^~~~~~~~
+/home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+     int main() { return somefunc();}
+                                  ^
+/home/pi/boat/build/CMakeFiles/CMakeTmp/src.cxx:1:37: note: declared here
+ __attribute__((__deprecated__)) int somefunc() { return 0; }
+                                     ^~~~~~~~
+Linking CXX executable cmTC_37233
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37233.dir/link.txt --verbose=1
+/usr/bin/c++   -Wno-format-zero-length -DCOMPILER_HAS_DEPRECATED_ATTR    -rdynamic CMakeFiles/cmTC_37233.dir/src.cxx.o  -o cmTC_37233 
+make[1]: Leaving directory '/home/pi/boat/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
