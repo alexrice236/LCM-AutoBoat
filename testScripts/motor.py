@@ -10,8 +10,9 @@ GPIO.output(6, GPIO.LOW)
 #GPIO.output(12, GPIO.HIGH)
 pwm = GPIO.PWM(12, 1000)
 
-pwm.start(75)
-time.sleep(1000)
+for i in range(75):
+    pwm.start(75)
+    time.sleep(.5)
 
 #while True:
 #    if keyboard.read_key() == "w":
