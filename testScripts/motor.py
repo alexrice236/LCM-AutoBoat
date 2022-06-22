@@ -11,7 +11,7 @@ GPIO.output(6, GPIO.LOW)
 pwm = GPIO.PWM(12, 1000)
 
 for i in range(75):
-    pwm.start(75)
+    pwm.start(i)
     time.sleep(.5)
 
 #while True:
