@@ -1,0 +1,7 @@
+package modata;
+
+struct motion_data
+{
+	double linear_speed;
+	double angle;
+}
