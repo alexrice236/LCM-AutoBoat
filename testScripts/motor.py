@@ -18,5 +18,7 @@ pwm = GPIO.PWM(12, 1000)
 while True:
     if keyboard.read_key() == "w":
         pwm.start(70)
+        continue
     else:
         pwm.stop()
+        continue
