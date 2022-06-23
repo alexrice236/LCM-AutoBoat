@@ -12,5 +12,4 @@ while True:
         pwm.start(70)
     elif keyboard.read_key() == 'd':
         pwm.start(30)
-    else:
-        pwm.stop()
+    continue
