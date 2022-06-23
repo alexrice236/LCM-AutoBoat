@@ -19,6 +19,6 @@ while True:
     if keyboard.read_key() == "w":
         pwm.start(70)
         continue
-    else:
+    else if keyboard.read_key() == "s":
         pwm.stop()
         continue
