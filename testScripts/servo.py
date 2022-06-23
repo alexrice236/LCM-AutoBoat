@@ -9,5 +9,5 @@ GPIO.setup(13, GPIO.OUT)
 pwm = GPIO.PWM(13, 1000)
 
 for i in range(2, 13):
-    pwm.changeDutyCycle(i)
+    pwm.ChangeDutyCycle(i)
     time.sleep(1)
