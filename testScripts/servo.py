@@ -1,6 +1,7 @@
 import keyboard
 import RPi.GPIO as GPIO
 import time
+from gpiozero import Servo
 
 GPIO.setmode(GPIO.BCM)
 
@@ -9,7 +10,7 @@ pwm = GPIO.PWM(13, 1000)
 
 while True:
     if keyboard.read_key() == 'a':
-        pwm.start(70)
+        pwm.start(2)
     elif keyboard.read_key() == 'd':
-        pwm.start(30)
+        pwm.start(12)
     continue
