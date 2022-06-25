@@ -21,23 +21,17 @@ def set_old_angle(angle):
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     print(get_old_angle())
-    if msg.angle == get_old_angle():
-        return
+    #if msg.angle == get_old_angle():
+    #    return
     print("starting pwm")
-    servo.start(msg.angle)
+    servo.start(0)
+    servo.ChangeDutyCycle(msg.angle)
     time.sleep(.1)
     servo.stop()
     set_old_angle(msg.angle)
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
-
-servo.start(8)
-time.sleep(1)
-servo.ChangeDutyCycle(6)
-time.sleep(1)
-servo.ChangeDutyCycle(10)
-time.sleep(1)
 
 while True:
     lc.handle()
