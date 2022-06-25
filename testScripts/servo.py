@@ -32,6 +32,13 @@ def my_handler(channel, data):
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
 
+servo.start(8)
+time.sleep(1)
+servo.start(6)
+time.sleep(1)
+servo.start(10)
+time.sleep(1)
+
 while True:
     lc.handle()
 
