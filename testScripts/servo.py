@@ -9,7 +9,6 @@ GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(13, GPIO.OUT)
 servo = GPIO.PWM(13, 50)
-servo.start(0)
 old_angle = 0
 
 def get_old_angle():
@@ -25,8 +24,9 @@ def my_handler(channel, data):
     if msg.angle == get_old_angle():
         return
     print("starting pwm")
-    servo.ChangeDutyCycle(msg.angle)
+    servo.start(msg.angle)
     time.sleep(.1)
+    servo.stop()
     set_old_angle(msg.angle)
 
 lc = lcm.LCM()
