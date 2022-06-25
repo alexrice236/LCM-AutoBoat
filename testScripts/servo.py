@@ -34,9 +34,9 @@ subscription = lc.subscribe("MOTION", my_handler)
 
 servo.start(8)
 time.sleep(1)
-servo.start(6)
+servo.ChangeDutyCycle(6)
 time.sleep(1)
-servo.start(10)
+servo.ChangeDutyCycle(10)
 time.sleep(1)
 
 while True:
