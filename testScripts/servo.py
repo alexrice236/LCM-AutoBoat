@@ -12,7 +12,8 @@ servo = GPIO.PWM(13, 50)
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
-    servo.ChangeDutyCycle(msg.angle)
+    servo.ChangeDutyCycle(10)
+    #servo.ChangeDutyCycle(msg.angle)
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
