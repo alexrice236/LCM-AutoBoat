@@ -13,6 +13,7 @@ servo.start(0)
 old_angle = 0
 
 def set_old_angle(angle):
+    print(angle)
     old_angle = angle
 
 def my_handler(channel, data):
