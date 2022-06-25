@@ -24,6 +24,7 @@ def my_handler(channel, data):
     print(get_old_angle())
     if msg.angle == get_old_angle():
         return
+    print("starting pwm")
     servo.start(msg.angle)
     time.sleep(.1)
     servo.stop()
