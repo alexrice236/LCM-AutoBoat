@@ -14,8 +14,6 @@ servo.start(0)
 def set_servo(duty):
     GPIO.output(13, True)
     servo.ChangeDutyCycle(duty)
-    time.sleep(0.5)
-    servo.ChangeDutyCycle(0)
     GPIO.output(13, False)
 
 
