@@ -1,4 +1,3 @@
-import keyboard
 import RPi.GPIO as GPIO
 import time
 import lcm

@@ -1,6 +1,7 @@
 import keyboard
 import RPi.GPIO as GPIO
 import time
+
 from modata import motion_data
 
 GPIO.setmode(GPIO.BCM)
