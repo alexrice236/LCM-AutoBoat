@@ -14,9 +14,11 @@ def press(key):
     if key == "w":
         msg.linear_speed = 1
     if key == "a":
-        msg.angle = -1
+        msg.angle = 10
+    elif key == "s":
+        msg.angle = 8
     elif key == "d":
-        msg.angle = 1
+        msg.angle = 6
 
     lc.publish("MOTION", msg.encode())
 
