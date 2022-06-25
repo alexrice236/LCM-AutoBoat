@@ -16,6 +16,7 @@ def get_old_angle():
     return old_angle
 
 def set_old_angle(angle):
+    global old_angle
     old_angle = angle
 
 def my_handler(channel, data):
