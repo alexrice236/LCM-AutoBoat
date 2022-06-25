@@ -16,11 +16,11 @@ def get_old_angle():
     return old_angle
 
 def set_old_angle(angle):
-    print(angle)
     old_angle = angle
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
+    print(get_old_angle())
     if msg.angle == get_old_angle():
         return
     servo.start(msg.angle)
