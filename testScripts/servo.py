@@ -10,7 +10,7 @@ servo.start(0)
 
 time.sleep(1)
 
-servo.ChangeDutyCycle(7.5)
+servo.ChangeDutyCycle(8)
 
 time.sleep(1)
 
