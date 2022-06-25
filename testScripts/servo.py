@@ -13,9 +13,9 @@ servo.start(0)
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
-    pwm.start(msg.angle)
+    servo.start(msg.angle)
     time.sleep(.1)
-    pwm.stop()
+    servo.stop()
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
