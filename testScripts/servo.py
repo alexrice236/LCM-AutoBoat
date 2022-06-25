@@ -19,6 +19,7 @@ def my_handler(channel, data):
     servo.start(msg.angle)
     time.sleep(.1)
     servo.stop()
+    old_angle = msg.angle
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
