@@ -8,11 +8,11 @@ GPIO.setup(13, GPIO.OUT)
 servo = GPIO.PWM(13, 50)
 servo.start(0)
 
-for i in range(2, 13):
-    time.sleep(1)
-    servo.ChangeDutyCycle(i)
-    time.sleep(1)
-    servo.ChangeDutyCycle(0)
+time.sleep(1)
+
+servo.ChangeDutyCycle(7)
+
+time.sleep(1)
 
 servo.stop()
 GPIO.cleanup()
