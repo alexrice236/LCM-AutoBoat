@@ -23,11 +23,19 @@ def set_servo(duty):
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     #set_servo(msg.angle)
-    servo.ChangeDutyCycle(duty)
+    servo.ChangeDutyCycle(msg.angle)
 
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
+
+servo.ChangeDutyCycle(6)
+time.sleep(1)
+servo.ChangeDutyCycle(8)
+time.sleep(1)
+servo.ChangeDutyCycle(10)
+time.sleep(1)
+
 
 while True:
     lc.handle()
