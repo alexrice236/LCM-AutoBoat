@@ -22,7 +22,8 @@ def set_servo(duty):
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
-    set_servo(msg.angle)
+    #set_servo(msg.angle)
+    servo.ChangeDutyCycle(duty)
 
 
 lc = lcm.LCM()
