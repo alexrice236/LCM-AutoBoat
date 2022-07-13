@@ -8,12 +8,15 @@ from modata import motion_data
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(13, GPIO.OUT)
-servo = GPIO.PWM(13, 50)
+servo = GPIO.PWM(13, 100)
 servo.start(0)
 
 def set_servo(duty):
+    if duty < 1:
+        return
     GPIO.output(13, True)
     servo.ChangeDutyCycle(duty)
+    time.sleep(1)
     GPIO.output(13, False)
 
 

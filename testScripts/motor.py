@@ -10,14 +10,11 @@ GPIO.setup(6, GPIO.OUT)
 GPIO.setup(12, GPIO.OUT)
 
 GPIO.output(6, GPIO.LOW)
-pwm = GPIO.PWM(12, 1000)
+pwm = GPIO.PWM(12, 50)
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
-    if msg.linear_speed > 0.5:
-        pwm.start(70)
-    else:
-        pwm.stop()
+    pwm.start(msg.linear_speed)
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
