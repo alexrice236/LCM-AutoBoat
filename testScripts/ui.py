@@ -10,7 +10,6 @@ def press(key):
     msg = motion_data()
     msg.linear_speed = 0.0
     msg.angle = 0.0
-#last test
 
     if key == "w":
         msg.linear_speed = 75
