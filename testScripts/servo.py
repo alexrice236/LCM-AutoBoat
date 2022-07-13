@@ -12,12 +12,12 @@ servo = GPIO.PWM(13, 100)
 servo.start(0)
 
 def set_servo(duty):
-    if duty < 1:
-        return
-    GPIO.output(13, True)
+    #if duty < 1:
+    #    return
+    #GPIO.output(13, True)
     servo.ChangeDutyCycle(duty)
-    time.sleep(1)
-    GPIO.output(13, False)
+    #time.sleep(1)
+    #GPIO.output(13, False)
 
 
 def my_handler(channel, data):
