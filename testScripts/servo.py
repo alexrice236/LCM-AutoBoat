@@ -37,8 +37,8 @@ servo.ChangeDutyCycle(10)
 time.sleep(1)
 
 
-while True:
-    lc.handle()
+#while True:
+#    lc.handle()
 
 servo.stop()
 GPIO.cleanup()
