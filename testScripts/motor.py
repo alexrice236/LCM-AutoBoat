@@ -9,8 +9,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(6, GPIO.OUT)
 GPIO.setup(12, GPIO.OUT)
 
-GPIO.output(12, GPIO.LOW)
-pwm = GPIO.PWM(6, 100)
+GPIO.output(6, GPIO.LOW)
+pwm = GPIO.PWM(12, 100)
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
