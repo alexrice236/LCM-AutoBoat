@@ -12,11 +12,13 @@ GPIO.setup(12, GPIO.OUT)
 GPIO.output(6, GPIO.LOW)
 pwm = GPIO.PWM(12, 100)
 pwm.start(0)
+for i in range(100):
+    pwm.ChangeDutyCycle(i)
+    time.sleep(.1)
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     pwm.ChangeDutyCycle(msg.linear_speed)
-    time.sleep(5)
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
