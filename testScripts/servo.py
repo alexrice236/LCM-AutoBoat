@@ -10,6 +10,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(13, GPIO.OUT)
 servo = GPIO.PWM(13, 100)
 servo.start(0)
+time.sleep(1)
 
 def set_servo(duty):
     #if duty < 1:
