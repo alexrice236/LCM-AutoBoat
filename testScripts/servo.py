@@ -18,8 +18,8 @@ def set_servo(duty):
     GPIO.output(13, True)
     servo.ChangeDutyCycle(duty)
     time.sleep(.5)
-    servo.ChangeDutyCycle(0)
     GPIO.output(13, False)
+    servo.ChangeDutyCycle(0)
 
 
 def my_handler(channel, data):

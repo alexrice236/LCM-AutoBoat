@@ -14,9 +14,9 @@ def press(key):
     if key == "w":
         msg.linear_speed = 60
     if key == "a":
-        msg.angle = 8
+        msg.angle = 10
     if key == "s":
-        msg.angle = 5.5
+        msg.angle = 6
     if key == "d":
         msg.angle = 2
 
