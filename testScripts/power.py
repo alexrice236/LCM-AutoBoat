@@ -15,6 +15,9 @@ sensor = adafruit_ina219.INA219(i2c)
 
 while True:
     msg = power_data()
+    msg.voltage = 0
+    msg.current = 0
+    msg.power = 0
     msg.voltage = sensor.bus_voltage
     msg.current = sensor.current
     msg.power = sensor.power
