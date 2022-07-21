@@ -13,8 +13,6 @@ servo.start(0)
 time.sleep(1)
 
 def set_servo(duty):
-    #if duty < 1:
-    #    return
     GPIO.output(13, True)
     servo.ChangeDutyCycle(duty)
     time.sleep(.5)
@@ -25,7 +23,6 @@ def set_servo(duty):
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     set_servo(msg.angle)
-    #servo.ChangeDutyCycle(msg.angle)
 
 
 lc = lcm.LCM()
