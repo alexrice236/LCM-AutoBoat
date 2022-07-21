@@ -1,8 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 import lcm
-from ina219 import INA219
-from ina219 import DeviceRangeError
+from pi-ina219 import INA219
+from pi-ina219 import DeviceRangeError
 from podata import power_data
 
 SHUNT_OHMS = 0.1
