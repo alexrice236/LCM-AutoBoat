@@ -2,10 +2,9 @@ import time
 import lcm
 import numpy as np
 import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from podata import power_data
-
-matplotlib.use("Agg")
 
 voltage_y = []
 current_y = []
