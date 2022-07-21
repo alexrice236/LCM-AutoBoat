@@ -1,0 +1,8 @@
+package podata;
+
+struct power_data
+{
+	double voltage;
+	double current;
+	double power;
+}

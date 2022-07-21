@@ -28,10 +28,6 @@ def my_handler(channel, data):
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
 
-#for i in range(2,13):
-#    servo.ChangeDutyCycle(i)
-#    time.sleep(1)
-
 while True:
     lc.handle()
 
