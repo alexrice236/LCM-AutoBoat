@@ -4,10 +4,6 @@ import lcm
 from modata import motion_data
 from podata import power_data
 
-lc = lcm.LCM()
-
-subscription = lc.subscribe("POWER", my_handler)
-
 def press(key):
     msg = motion_data()
     msg.linear_speed = 0.0
@@ -30,6 +26,10 @@ def my_handler(channel, data):
     print("Voltage: " + str(msg.voltage))
     print("Current: " + str(msg.current))
     print("Power: " + str(msg.power))
+
+lc = lcm.LCM()
+
+subscription = lc.subscribe("POWER", my_handler)
 
 while True:
     listen_keyboard(on_press=press)
