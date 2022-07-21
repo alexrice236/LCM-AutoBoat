@@ -2,7 +2,6 @@ from sshkeyboard import listen_keyboard
 import lcm
 
 from modata import motion_data
-from podata import power_data
 
 def press(key):
     msg = motion_data()
@@ -20,17 +19,8 @@ def press(key):
 
     lc.publish("MOTION", msg.encode())
 
-def my_handler(channel, data):
-    msg = power_data.decode(data)
-    print("-----------")
-    print("Voltage: " + str(msg.voltage))
-    print("Current: " + str(msg.current))
-    print("Power: " + str(msg.power))
 
 lc = lcm.LCM()
 
-subscription = lc.subscribe("POWER", my_handler)
-
 while True:
-    lc.handle()
     listen_keyboard(on_press=press)
