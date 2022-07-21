@@ -17,7 +17,7 @@ def my_handler(channel, data):
     voltage_y.append(msg.voltage)
     current_y.append(msg.current)
     power_y.append(msg.power)
-    time_x.append(time())
+    time_x.append(time.time())
 
 lc = lcm.LCM()
 subscription = lc.subscribe("POWER", my_handler)
