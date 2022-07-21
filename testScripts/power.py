@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 import lcm
-from adafruit_ina219 import INA219
+from ina219 import INA219
 from podata import power_data
 
 SHUNT_OHMS = 0.1
