@@ -33,4 +33,5 @@ subscription = lc.subscribe("POWER", my_handler)
 
 while True:
     listen_keyboard(on_press=press)
+    print('yea')
     lc.handle()
