@@ -23,6 +23,7 @@ subscription = lc.subscribe("POWER", my_handler)
 
 while True:
     try:
+        plt.savefig("/home/pi/LCM-AutoBoat/testScripts/graph.png")
         lc.handle()
     except KeyboardInterrupt:
         plt.subplot(3,1,1)
