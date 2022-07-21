@@ -6,7 +6,7 @@ import lcm
 
 lc = lcm.LCM()
 
-subscription = lc.subscribe("POWER", my_handler)
+#subscription = lc.subscribe("POWER", my_handler)
 
 def press(key):
     msg = motion_data()
