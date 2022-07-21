@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from podata import power_data
 
+matplotlib.use("Agg")
+
 voltage_y = []
 current_y = []
 power_y = []
@@ -32,6 +34,6 @@ except KeyboardInterrupt:
     plt.plot(np.array(time_x), np.array(power_y))
     plt.title("Power (W)")
     plt.xlabel("Time (s)")
-    plt.savefig("graph.png")
+    plt.savefig("/home/pi/LCM-AutoBoat/testScripts/graph.png")
     quit()
 
