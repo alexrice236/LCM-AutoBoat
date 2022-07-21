@@ -1,7 +1,7 @@
 from sshkeyboard import listen_keyboard
 import lcm
 
-#from modata import motion_data
+from modata import motion_data
 #from podata import power_data
 
 lc = lcm.LCM()
