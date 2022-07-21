@@ -1,6 +1,7 @@
 import time
 import lcm
 import numpy as np
+iport matplotlib
 import matplotlib.pyplot as plt
 from podata import power_data
 
