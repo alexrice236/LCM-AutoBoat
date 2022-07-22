@@ -15,7 +15,7 @@ def my_handler(channel, data):
     msg = power_data.decode(data)
     try:
         with sqlite3.connect(power_db) as c:
-            c.execute('''INSERT into actuation_power_data VALUES (?,?);''',("ACTUATION",msg.voltage,msg.current,msg.power,time.time()))
+            c.execute('''INSERT into actuation_power_data VALUES (?,?,?,?,?);''',("ACTUATION",msg.voltage,msg.current,msg.power,time.time()))
     except:
         print("database does not exist")
     return
