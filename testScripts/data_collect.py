@@ -8,7 +8,8 @@ curr = "CURR"
 power = "POW"
 
 power_db = "/home/pi/LCM-AutoBoat/testScripts/actuation_power.db"
-c.execute("""CREATE TABLE IF NOT EXISTS actuation_power_data (source text, voltage decimal, current decimal, power decimal, time int);""")
+with sqlite3.connect(power_db) as c:
+    c.execute("""CREATE TABLE IF NOT EXISTS actuation_power_data (source text, voltage decimal, current decimal, power decimal, time int);""")
 
 def my_handler(channel, data):
     msg = power_data.decode(data)
