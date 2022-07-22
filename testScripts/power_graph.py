@@ -4,19 +4,24 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from podata import power_data
+import sqlite3
 
-voltage_y = []
-current_y = []
-power_y = []
-time_x = []
+volt = "VOLT"
+curr = "CURR"
+power = "POW"
 
-def my_handler(channel, data):
-    msg = power_data.decode(data)
-    voltage_y.append(msg.voltage)
-    current_y.append(msg.current)
-    power_y.append(msg.power)
-    time_x.append(time.time())
+power_db = "/home/pi/LCM-AutoBoat/testScripts/actuation_power.db"
+
+
+with sqlite3.connect(power_db) as c:
+    voltages = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', (volt,)).fetchall()
+    currents = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', (curr,)).fetchall()
+    powers = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', (power,)).fetchall()
+    times = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', ("TIME",)).fetchall()
+    voltage_y = [entry[1] for entry in voltages]
+    current_y = [entry[1] for entry in currents]
+    power_y = [entry[1] for entry in powers]
+    time_x = [entry[1] for entry in times]
     plt.subplot(3,1,1)
     plt.plot(np.array(time_x), np.array(voltage_y))
     plt.title("Voltage (V)")
@@ -28,11 +33,5 @@ def my_handler(channel, data):
     plt.title("Power (W)")
     plt.xlabel("Time (s)")
     plt.savefig("/home/pi/LCM-AutoBoat/testScripts/graph.png")
-
-lc = lcm.LCM()
-subscription = lc.subscribe("POWER", my_handler)
-
-while True:
-    lc.handle()
 
 
