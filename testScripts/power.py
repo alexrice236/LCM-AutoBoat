@@ -19,4 +19,4 @@ while True:
     msg.current = sensor.current
     msg.power = sensor.power
     lc.publish("POWER", msg.encode())
-    time.sleep(.5)
+    time.sleep(.1)
