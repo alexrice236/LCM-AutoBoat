@@ -8,18 +8,13 @@ curr = "CURR"
 power = "POW"
 
 power_db = "/home/pi/LCM-AutoBoat/testScripts/actuation_power.db"
-c.execute("""CREATE TABLE IF NOT EXISTS actuation_power_data (type text, value decimal, time int);""")
-
-
+c.execute("""CREATE TABLE IF NOT EXISTS actuation_power_data (source text, voltage decimal, current decimal, power decimal, time int);""")
 
 def my_handler(channel, data):
     msg = power_data.decode(data)
     try:
         with sqlite3.connect(power_db) as c:
-            c.execute('''INSERT into actuation_power_data VALUES (?,?);''',(volt,msg.voltage))
-            c.execute('''INSERT into actuation_power_data VALUES (?,?);''',(curr,msg.current))
-            c.execute('''INSERT into actuation_power_data VALUES (?,?);''',(power,msg.power))
-            c.execute('''INSERT into actuation_power_data VALUES (?,?);''',("TIME",time.time()))
+            c.execute('''INSERT into actuation_power_data VALUES (?,?);''',("ACTUATION",msg.voltage,msg.current,msg.power,time.time()))
     except:
         print("database does not exist")
     return

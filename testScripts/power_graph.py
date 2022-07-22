@@ -12,16 +12,17 @@ power = "POW"
 
 power_db = "/home/pi/LCM-AutoBoat/testScripts/actuation_power.db"
 
-
 with sqlite3.connect(power_db) as c:
-    voltages = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', (volt,)).fetchall()
-    currents = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', (curr,)).fetchall()
-    powers = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', (power,)).fetchall()
-    times = c.execute('''SELECT * FROM actuation_power_data WHERE type = ? ORDER BY rowid DESC;''', ("TIME",)).fetchall()
-    voltage_y = [entry[1] for entry in voltages]
-    current_y = [entry[1] for entry in currents]
-    power_y = [entry[1] for entry in powers]
-    time_x = [entry[1] for entry in times]
+    data_entries = c.execute('''SELECT * FROM actuation_power_data WHERE source = ? ORDER BY rowid DESC;''', ("ACTUATION",)).fetchall()
+    voltage_y = []
+    current_y = []
+    power_y = []
+    time_x = []
+    for entry in data_entries:
+        voltage_y.append(entry[1])
+        current_y.append(entry[2])
+        power_y.append(entry[3])
+        time_x.append(entry[4])
     plt.subplot(3,1,1)
     plt.plot(np.array(time_x), np.array(voltage_y))
     plt.title("Voltage (V)")
@@ -33,5 +34,3 @@ with sqlite3.connect(power_db) as c:
     plt.title("Power (W)")
     plt.xlabel("Time (s)")
     plt.savefig("/home/pi/LCM-AutoBoat/testScripts/graph.png")
-
-
