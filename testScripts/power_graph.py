@@ -31,6 +31,7 @@ with sqlite3.connect(power_db) as c:
     plt.title("Current (mA)")
     plt.subplot(3,1,3)
     plt.plot(np.array(time_x), np.array(power_y))
+    print(sum(power_y)/len(power_y))
     plt.title("Power (W)")
     plt.xlabel("Time (s)")
     plt.savefig("/home/pi/LCM-AutoBoat/testScripts/graph.png")
