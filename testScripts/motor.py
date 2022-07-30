@@ -16,6 +16,7 @@ pwm.start(0)
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     pwm.ChangeDutyCycle(msg.linear_speed)
+    print(msg.linear_speed)
 
 lc = lcm.LCM()
 subscription = lc.subscribe("MOTION", my_handler)
