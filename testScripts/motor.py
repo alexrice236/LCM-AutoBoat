@@ -15,6 +15,7 @@ pwm.start(0)
 
 for i in range(80):
     pwm.ChangeDutyCycle(i)
+    print(i)
     time.sleep(.1)
 
 pwm.ChangeDutyCycle(0)
