@@ -17,6 +17,8 @@ for i in range(80):
     pwm.ChangeDutyCycle(i)
     time.sleep(.1)
 
+pwm.ChangeDutyCycle(0)
+
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     pwm.ChangeDutyCycle(msg.linear_speed)
