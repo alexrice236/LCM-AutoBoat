@@ -13,12 +13,6 @@ GPIO.output(6, GPIO.LOW)
 pwm = GPIO.PWM(12, 400)
 pwm.start(0)
 
-for i in range(80):
-    pwm.ChangeDutyCycle(80-i)
-    print(80-i)
-    time.sleep(.5)
-
-pwm.ChangeDutyCycle(0)
 
 def my_handler(channel, data):
     msg = motion_data.decode(data)
