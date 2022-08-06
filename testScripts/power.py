@@ -3,12 +3,14 @@ import time
 import lcm
 import board
 import busio
-import adafruit_ina219
+from adafruit_ina219 import ADCResolution, BusVoltageRange, INA219
 from podata import power_data
 
 lc = lcm.LCM()
 i2c = busio.I2C(board.SCL, board.SDA)
-sensor = adafruit_ina219.INA219(i2c)
+sensor = INA219(i2c)
+sensor.bus_adc_resolution = ADCResolution.ADCRES_12BIT_16S
+sensor.bus_voltage_range = BusVoltageRange.RANGE_16V
 
 while True:
     msg = power_data()
@@ -19,4 +21,4 @@ while True:
     msg.current = sensor.current
     msg.power = sensor.power
     lc.publish("POWER", msg.encode())
-    time.sleep(.01)
+    time.sleep(.1)
