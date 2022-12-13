@@ -37,7 +37,7 @@ def my_handler(channel, data):
     left.ChangeDutyCycle(msg.linear_speed)
     right.ChangeDutyCycle(msg.linear_speed)
 
-lc = lcm.LCM()
+lc = lcm.LCM("udpm://239.255.76.67:7667?ttl=1")
 subscription = lc.subscribe("MOTION", my_handler)
 
 while True:
