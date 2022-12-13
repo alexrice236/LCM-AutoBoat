@@ -27,9 +27,9 @@ def my_handler(channel, data):
     msg = motion_data.decode(data)
     if msg.angle == -1:
         left.ChangeDutyCycle(0)
-        right.ChangeDutyCycle(msg.linear_speed/2)
+        right.ChangeDutyCycle(msg.linear_speed)
     elif msg.angle == 1:
-        left.ChangeDutyCycle(msg.linear_speed/2)
+        left.ChangeDutyCycle(msg.linear_speed)
         right.ChangeDutyCycle(0)
     else:
         left.ChangeDutyCycle(msg.linear_speed)
