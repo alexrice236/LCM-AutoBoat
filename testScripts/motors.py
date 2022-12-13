@@ -26,11 +26,11 @@ right.start(0)
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     if msg.angle == -1:
-        GPIO.output(5, GPIO.HIGH)
-        GPIO.output(6, GPIO.LOW)
-    elif msg.angle == 1:
         GPIO.output(5, GPIO.LOW)
         GPIO.output(6, GPIO.HIGH)
+    elif msg.angle == 1:
+        GPIO.output(5, GPIO.HIGH)
+        GPIO.output(6, GPIO.LOW)
     else:
         GPIO.output(5, GPIO.LOW)
         GPIO.output(6, GPIO.LOW)
