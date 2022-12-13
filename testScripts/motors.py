@@ -26,16 +26,14 @@ right.start(0)
 def my_handler(channel, data):
     msg = motion_data.decode(data)
     if msg.angle == -1:
-        GPIO.output(5, GPIO.LOW)
-        GPIO.output(6, GPIO.HIGH)
+        left.ChangeDutyCycle(0)
+        right.ChangeDutyCycle(msg.linear_speed/2)
     elif msg.angle == 1:
-        GPIO.output(5, GPIO.HIGH)
-        GPIO.output(6, GPIO.LOW)
+        left.ChangeDutyCycle(msg.linear_speed/2)
+        right.ChangeDutyCycle(0)
     else:
-        GPIO.output(5, GPIO.LOW)
-        GPIO.output(6, GPIO.LOW)
-    left.ChangeDutyCycle(msg.linear_speed)
-    right.ChangeDutyCycle(msg.linear_speed)
+        left.ChangeDutyCycle(msg.linear_speed)
+        right.ChangeDutyCycle(msg.linear_speed)
 
 lc = lcm.LCM("udpm://239.255.76.67:7667?ttl=1")
 subscription = lc.subscribe("MOTION", my_handler)
