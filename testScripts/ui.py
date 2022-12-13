@@ -21,6 +21,7 @@ def press(key):
 
 
 lc = lcm.LCM()
+lcm_create("udpm://239.255.76.67:7667?ttl=1")
 
 while True:
     listen_keyboard(on_press=press)
