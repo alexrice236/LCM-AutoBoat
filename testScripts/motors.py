@@ -30,11 +30,11 @@ def my_handler(channel, data):
     if msg.angle == -1:
         GPIO.output(5, GPIO.LOW)
         GPIO.output(6, GPIO.HIGH)
-        speedRight *= 0.5
+        speedRight *= 0.3
     elif msg.angle == 1:
         GPIO.output(5, GPIO.HIGH)
         GPIO.output(6, GPIO.LOW)
-        speedLeft *= 0.5
+        speedLeft *= 0.3
     else:
         GPIO.output(5, GPIO.LOW)
         GPIO.output(6, GPIO.LOW)
