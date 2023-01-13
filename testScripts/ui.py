@@ -1,7 +1,9 @@
-from sshkeyboard import listen_keyboard
+# from sshkeyboard import listen_keyboard
 import lcm
 
 from modata import motion_data
+
+count = 0
 
 def press(key):
     msg = motion_data()
@@ -23,4 +25,11 @@ def press(key):
 lc = lcm.LCM()
 
 while True:
-    listen_keyboard(on_press=press)
+    wait(.1)
+    if count == 6: count = 0
+    msg = motion_data()
+    msg.linear_speed = count
+    msg.angle = 0.0
+    lc.publish("MOTION", msg.encode())
+    count += 1
+#     listen_keyboard(on_press=press)
