@@ -11,18 +11,16 @@ def press(key):
     msg.angle = 0.0
 
     if key == "w":
-        msg.linear_speed = 40
+        msg.linear_speed = 30
     if key == "a":
-        msg.angle = 10
-    if key == "s":
-        msg.angle = 6
+        msg.angle = -1
     if key == "d":
-        msg.angle = 2
+        msg.angle = 1
 
     lc.publish("MOTION", msg.encode())
 
 
-lc = lcm.LCM()
+lc = lcm.LCM("udpm://239.255.76.67:7667?ttl=1")
 
 while True:
     wait(.1)
